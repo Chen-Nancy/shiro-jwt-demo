@@ -26,7 +26,7 @@ public class MyErrorController implements ErrorController {
     private static final String ERROR_PATH = "/error";
     private static final String NO_LOGIN_MSG = "未登录";
     private static final String NO_PERMISSION_MSG = "无权访问";
-    private ErrorAttributes errorAttributes;
+    private final ErrorAttributes errorAttributes;
 
     @Autowired
     public MyErrorController(ErrorAttributes errorAttributes) {

@@ -7,7 +7,7 @@ import org.apache.shiro.authc.AuthenticationToken;
  * @date 2020/5/31 23:45
  */
 public class MyToken implements AuthenticationToken {
-    private String token;
+    private final String token;
 
     public MyToken(String token) {
         this.token = token;
